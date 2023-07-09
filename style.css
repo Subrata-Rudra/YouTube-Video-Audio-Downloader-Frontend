@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head a {
+  text-decoration: none;
+  font-size: 5rem;
+  color: rgb(230, 36, 68);
+}
+
+.nav {
+  background-color: black;
+  width: 100vw;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.nav ul li {
+  margin: 0 4rem;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  text-align: center;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.dummy {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.dummy h2 {
+  margin-top: 5rem;
+  padding: 0 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.footer a {
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  position: sticky;
+}
+
+#thumbnail,
+#thumbnail1 {
+  margin-top: 1rem;
+  width: 500px;
+  height: 300px;
+}
+
+.title {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#inp input,
+#inp1 input {
+  margin-top: 5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  width: 70vw;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  background-color: rgb(249, 249, 249);
+  outline: none;
+}
+
+#inp button,
+#inp1 button {
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.table {
+  margin: 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+th {
+  padding: 0.5rem 1.2rem;
+  margin-left: 7rem;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  background-color: rgb(5, 193, 8);
+  color: white;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 1rem;
+}
+
+td a {
+  text-decoration: none;
+  color: rgb(6, 138, 6);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 925px) and (min-width: 600px) {
+  .head a {
+    font-size: 3.5rem;
+  }
+
+  .nav ul li {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  .dummy {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 599px) and (min-width: 405px) {
+  .head a {
+    font-size: 2.5rem;
+  }
+
+  .nav ul li {
+    margin: 0 0.5rem;
+    padding: 0.7rem 0.5rem;
+  }
+
+  .nav ul li a {
+    font-size: 1rem;
+  }
+
+  .dummy {
+    font-size: 1rem;
+  }
+
+  #inp input,
+  #inp1 input {
+    margin-top: 3rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  #inp button,
+  #inp1 button {
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    margin-left: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #thumbnail,
+  #thumbnail1 {
+    width: 400px;
+    height: 200px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  th {
+    font-size: 1.2rem;
+  }
+
+  td {
+    padding: 0.7rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+
+  .footer a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .head a {
+    font-size: 2rem;
+  }
+
+  .nav ul li {
+    margin: 0 0.5rem;
+    padding: 0.7rem 0.5rem;
+  }
+
+  .nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  .dummy {
+    font-size: 0.8rem;
+  }
+
+  #inp input,
+  #inp1 input {
+    margin-top: 3rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  #inp button,
+  #inp1 button {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 0.3rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  #thumbnail,
+  #thumbnail1 {
+    width: 285px;
+    height: 150px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  th {
+    font-size: 1rem;
+  }
+
+  td {
+    padding: 0.5rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+
+  .footer a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+}

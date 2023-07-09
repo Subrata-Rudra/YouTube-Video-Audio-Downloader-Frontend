@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>YtFrnd | Download Audio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <a href="/index.html">YtFrnd</a>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="./video.html">Download Video</a></li>
+          <li><a href="./audio.html">Download Audio</a></li>
+        </ul>
+      </div>
+      <div id="inp1">
+        <input
+          id="link1"
+          type="text"
+          placeholder="Paste the link here"
+        />
+        <button onclick="getAudio()">Go</button>
+      </div>
+      <div id="main1" class="invisible">
+        <img
+          id="thumbnail1"
+          src="/audio.jpg"
+          alt="Video Thumbnail"
+        />
+        <h3 id="a_title" class="title"></h3>
+        <div class="table">
+          <table>
+            <thead class="colName">
+              <th>Bitrate</th>
+              <th>Link</th>
+            </thead>
+            <tbody id="table_body1"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      Made With ❤️ by
+      <a href="https://github.com/Subrata-Rudra" target="_blank"
+        >Subrata Rudra</a
+      >
+    </div>
+  </body>
+</html>
