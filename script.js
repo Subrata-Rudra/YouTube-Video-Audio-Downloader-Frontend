@@ -1,3 +1,5 @@
+window.onload(activeStatus());
+
 function getVideo() {
   var thumbnail = document.getElementById("thumbnail");
   var title = document.getElementById("v_title");
@@ -59,4 +61,18 @@ function getAudio() {
       document.getElementById("table_body1").innerHTML = tableData;
     });
   document.getElementById("main1").classList.remove("invisible");
+}
+
+
+function activeStatus()
+{
+  let url = window.location.href
+  if(url.includes('video'))
+  {
+    document.getElementById('v1').classList.add('active')
+  }
+  if(url.includes('audio'))
+  {
+    document.getElementById('a2').classList.add('active')
+  }
 }
